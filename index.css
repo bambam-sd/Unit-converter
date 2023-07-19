@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background: #1F2937;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-container {
+    background: #6943FF;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#input-el {
+    width: 100px;
+    height: 75px;
+    background: none;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+button {
+    background: #FFF;
+    display: block;
+    margin: 25px auto 10px auto;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: #FFF;
+}
+
+#measurement-container {
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.length-container, .volume-container, .mass-container {
+    background: #273549;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#length-el, #volume-el, #mass-el {
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+h2 {
+    color: #CCC1FF;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
