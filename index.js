@@ -16,7 +16,7 @@ const massConversion = 2.204
 
 convertEl.addEventListener ("click", function() {
     let inputValue = inputEl.value
-    if (inputValue === 1) {
+    if (inputEl.value === 1) {
      lengthEl.textContent = `
                  ${inputValue} meter =  ${(inputValue * lengthConversion).toFixed(3)} feet | 
                  ${inputValue} foot = ${(inputValue / lengthConversion).toFixed(3)} meters
