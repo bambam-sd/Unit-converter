@@ -16,6 +16,19 @@ const massConversion = 2.204
 
 convertEl.addEventListener ("click", function() {
     let inputValue = inputEl.value
+    if (inputValue === 1) {
+     lengthEl.textContent = `
+                 ${inputValue} meter =  ${(inputValue * lengthConversion).toFixed(3)} feet | 
+                 ${inputValue} foot = ${(inputValue / lengthConversion).toFixed(3)} meters
+            `
+    volumeEl.textContent = `
+                 ${inputValue} liter =  ${(inputValue * volumeConversion).toFixed(3)} gallons | 
+                 ${inputValue} gallon = ${(inputValue / volumeConversion).toFixed(3)} liters
+            `
+    massEl.textContent = `
+                 ${inputValue} kilogram =  ${(inputValue * massConversion).toFixed(3)} pound | 
+                 ${inputValue} pound = ${(inputValue / massConversion).toFixed(3)} kilogram`
+    } else {
     lengthEl.textContent = `
                  ${inputValue} meters =  ${(inputValue * lengthConversion).toFixed(3)} feet | 
                  ${inputValue} feet = ${(inputValue / lengthConversion).toFixed(3)} meters
@@ -25,7 +38,8 @@ convertEl.addEventListener ("click", function() {
                  ${inputValue} gallons = ${(inputValue / volumeConversion).toFixed(3)} liters
             `
     massEl.textContent = `
-                 ${inputValue} kilogram =  ${(inputValue * massConversion).toFixed(3)} pound | 
-                 ${inputValue} pound = ${(inputValue / massConversion).toFixed(3)} kilogram
+                 ${inputValue} kilograms =  ${(inputValue * massConversion).toFixed(3)} pounds | 
+                 ${inputValue} pounds = ${(inputValue / massConversion).toFixed(3)} kilograms
             `
+     }
 })
